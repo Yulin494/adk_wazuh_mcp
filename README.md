@@ -1,0 +1,1 @@
+# adk_wazuh_mcp
