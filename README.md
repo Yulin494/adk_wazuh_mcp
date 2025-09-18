@@ -1,20 +1,21 @@
 # adk_wazuh_mcp
 
 先進入虛擬環境
-"""
-# Create
+
+```
 python -m venv .venv
 # Activate (each new terminal)
 # macOS/Linux: source .venv/bin/activate
 # Windows CMD: .venv\Scripts\activate.bat
 # Windows PowerShell: .venv\Scripts\Activate.ps1
-"""
+```
 
 
 下載套件
-"""
+
+```
 pip install google-adk
-"""
+```
 
 然後需要建立一個 wazuh 的.env，並且把 agent.py的路徑改成你設定的路徑
 wazuh .env的內容在hackmd內
@@ -23,15 +24,15 @@ docker 要記得開啟
 也需要在multi_tool_agent建立一個.env檔案
 
 .env如下
-"""
+```
 GOOGLE_GENAI_USE_VERTEXAI=FALSE
 GOOGLE_API_KEY=YourGoogleApiKey
-"""
+```
 
 啟動server
-"""
+```
 adk api_server .  
-"""
+```
 
 啟動後，需要先建立一個sessionID
 
